@@ -1,0 +1,9 @@
+created: 20190723195131049
+modified: 20200317193347532
+tags: 
+title: Всі проекти в ProTW
+
+<$list filter="[is[image]!has[draft.of]!is[system]sort[wiki-order]]">
+{{!!title||$:/boa/template/block}}
+</$list>
+ 
