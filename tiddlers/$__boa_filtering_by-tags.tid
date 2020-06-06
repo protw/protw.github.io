@@ -1,0 +1,21 @@
+caption: За категоріями
+created: 20200606182257567
+modified: 20200606184740307
+tags: 
+title: $:/boa/filtering/by-tags
+
+<div style="float:right;margin:0px 15px 15px;">
+<$button class="tc-btn-invisible" tooltip="Зняти всі відмітки"><$action-setfield $tiddler="$:/boa/filtering/by-tags-list" $index="tag-list" $value=""/>{{$:/boa/img/erase}}</$button>
+</div>
+
+<$list filter="[tags[]!prefix[$]sort[]]" variable="item">
+<<item>> <$checklist tiddler="$:/boa/filtering/by-tags-list" index="tag-list" item=<<item>>/><<hspace width:"12px">></$list>
+
+---
+
+<$set name="myList" value={{$:/boa/filtering/by-tags-list##tag-list}}>
+
+<$list filter="[enlist<myList>tagging[]]" template="$:/boa/template/block">
+
+</$list>
+</$set>

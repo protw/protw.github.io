@@ -1,0 +1,10 @@
+author: Mohammad Rahmani
+core-version: >=5.1.22
+dependents: 
+description: Utility
+list: readme history license
+plugin-type: plugin
+source: https://github.com/kookma/TW-Utility
+title: $:/plugins/kookma/utility
+type: application/json
+version: 2.1.2

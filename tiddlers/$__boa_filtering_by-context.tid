@@ -1,8 +1,9 @@
-created: 20190723195131049
-modified: 20200525165253916
+caption: За контекстом
+created: 20200606184818865
+modified: 20200606185101012
 revision: 0
 tags: 
-title: Всі проекти в ProTW
+title: $:/boa/filtering/by-context
 
 <<list-search filter:"[is[image]!has[draft.of]!is[system]sort[wiki-order]]" template:"$:/boa/template/block">>
  
