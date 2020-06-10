@@ -266,6 +266,8 @@ Error message and password prompt
 
 <li>Всі проекти в ProTW</li>
 
+<li>Творчість</li>
+
 </ul>
 </p>
 
@@ -284,13 +286,13 @@ Error message and password prompt
 <pre>&lt;&lt;list-search filter:&quot;[is[image]!has[draft.of]!is[system]sort[wiki-order]]&quot; template:&quot;$:/boa/template/block&quot;&gt;&gt;
  </pre>
 </div>
-<div caption="За категоріями" created="20200606182257567" modified="20200610195257641" tags="" title="$:/boa/filtering/by-tags" revision="0" bag="default">
+<div caption="За категоріями" created="20200606182257567" modified="20200610201159388" tags="" title="$:/boa/filtering/by-tags" revision="0" bag="default">
 <pre>&lt;div style=&quot;float:right;margin:0px 15px 15px;&quot;&gt;
 &lt;$button class=&quot;tc-btn-invisible&quot; tooltip=&quot;Зняти всі відмітки&quot;&gt;&lt;$action-setfield $tiddler=&quot;$:/boa/filtering/by-tags-list&quot; $index=&quot;tag-list&quot; $value=&quot;&quot;/&gt;{{$:/boa/img/erase}}&lt;/$button&gt;
 &lt;/div&gt;
 
 @@font-size:16pt;&lt;&lt;doc-svg $:/boa/img/icons/tag.svg&gt;&gt;@@&lt;&lt;hspace 10px&gt;&gt;&lt;$list filter=&quot;[tags[]!prefix[$]sort[]]&quot; variable=&quot;item&quot;&gt;
-&lt;&lt;item&gt;&gt; &lt;$checklist tiddler=&quot;$:/boa/filtering/by-tags-list&quot; index=&quot;tag-list&quot; item=&lt;&lt;item&gt;&gt;/&gt;&lt;&lt;hspace width:&quot;12px&quot;&gt;&gt;&lt;/$list&gt;
+&lt;&lt;item&gt;&gt;&amp;nbsp;&lt;$checklist tiddler=&quot;$:/boa/filtering/by-tags-list&quot; index=&quot;tag-list&quot; item=&lt;&lt;item&gt;&gt;/&gt;&lt;&lt;hspace width:&quot;12px&quot;&gt;&gt;&lt;/$list&gt;
 
 ---
 
@@ -11679,6 +11681,11 @@ $value={{$:/temp/newfieldvalue}}/&gt;
 <div created="20190723195131049" modified="20200606185028116" tags="" title="Всі проекти в ProTW" revision="0" bag="default">
 <pre>&lt;&lt;tabs &quot;$:/boa/filtering/by-tags $:/boa/filtering/by-context&quot; &quot;$:/boa/filtering/by-tags&quot;&gt;&gt;
  </pre>
+</div>
+<div created="20200602044721393" list-before="$:/core/ui/SideBar/Open" modified="20200610201513743" tags="$:/tags/SideBar" title="Творчість" revision="0" bag="default">
+<pre>&lt;&lt;&lt;.tc-big-quote
+Творчість - це просто з'єднання речей. Коли ви запитуєте творчих людей, як вони щось зробили, вони відчувають себе дещо винуватими, бо насправді нічого не робили, а просто щось побачили. Щось із часом стає здаватися очевидним. Це тому, що їм вдалося об'єднати власний досвід і синтезувати нові речі.
+&lt;&lt;&lt; Стів Джобс</pre>
 </div>
 
 
