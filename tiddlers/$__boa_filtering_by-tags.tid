@@ -1,6 +1,6 @@
 caption: За категоріями
 created: 20200606182257567
-modified: 20200606184740307
+modified: 20200610195257641
 tags: 
 title: $:/boa/filtering/by-tags
 
@@ -8,7 +8,7 @@ title: $:/boa/filtering/by-tags
 <$button class="tc-btn-invisible" tooltip="Зняти всі відмітки"><$action-setfield $tiddler="$:/boa/filtering/by-tags-list" $index="tag-list" $value=""/>{{$:/boa/img/erase}}</$button>
 </div>
 
-<$list filter="[tags[]!prefix[$]sort[]]" variable="item">
+@@font-size:16pt;<<doc-svg $:/boa/img/icons/tag.svg>>@@<<hspace 10px>><$list filter="[tags[]!prefix[$]sort[]]" variable="item">
 <<item>> <$checklist tiddler="$:/boa/filtering/by-tags-list" index="tag-list" item=<<item>>/><<hspace width:"12px">></$list>
 
 ---

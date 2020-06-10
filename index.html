@@ -156,6 +156,8 @@ Error message and password prompt
 
 <li>$:/boa/img/github-logo.svg</li>
 
+<li>$:/boa/img/icons/tag.svg</li>
+
 <li>$:/boa/img/protw-logo.svg</li>
 
 <li>$:/boa/logo</li>
@@ -282,12 +284,12 @@ Error message and password prompt
 <pre>&lt;&lt;list-search filter:&quot;[is[image]!has[draft.of]!is[system]sort[wiki-order]]&quot; template:&quot;$:/boa/template/block&quot;&gt;&gt;
  </pre>
 </div>
-<div caption="За категоріями" created="20200606182257567" modified="20200606184740307" tags="" title="$:/boa/filtering/by-tags" revision="0" bag="default">
+<div caption="За категоріями" created="20200606182257567" modified="20200610195257641" tags="" title="$:/boa/filtering/by-tags" revision="0" bag="default">
 <pre>&lt;div style=&quot;float:right;margin:0px 15px 15px;&quot;&gt;
 &lt;$button class=&quot;tc-btn-invisible&quot; tooltip=&quot;Зняти всі відмітки&quot;&gt;&lt;$action-setfield $tiddler=&quot;$:/boa/filtering/by-tags-list&quot; $index=&quot;tag-list&quot; $value=&quot;&quot;/&gt;{{$:/boa/img/erase}}&lt;/$button&gt;
 &lt;/div&gt;
 
-&lt;$list filter=&quot;[tags[]!prefix[$]sort[]]&quot; variable=&quot;item&quot;&gt;
+@@font-size:16pt;&lt;&lt;doc-svg $:/boa/img/icons/tag.svg&gt;&gt;@@&lt;&lt;hspace 10px&gt;&gt;&lt;$list filter=&quot;[tags[]!prefix[$]sort[]]&quot; variable=&quot;item&quot;&gt;
 &lt;&lt;item&gt;&gt; &lt;$checklist tiddler=&quot;$:/boa/filtering/by-tags-list&quot; index=&quot;tag-list&quot; item=&lt;&lt;item&gt;&gt;/&gt;&lt;&lt;hspace width:&quot;12px&quot;&gt;&gt;&lt;/$list&gt;
 
 ---
@@ -342,6 +344,20 @@ Error message and password prompt
 &lt;g&gt;
 &lt;/g&gt;
 &lt;g&gt;
+&lt;/g&gt;
+&lt;/svg&gt;
+</pre>
+</div>
+<div created="20200610170636876" modified="20200610170650362" title="$:/boa/img/icons/tag.svg" revision="0" bag="default">
+<pre>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 59 59&quot;&gt;
+&lt;g&gt;
+	&lt;path style=&quot;fill:#E8D5B2;&quot; d=&quot;M30.22,5L1.241,34.218c-0.987,0.987-0.987,2.588,0,3.576l20.466,20.466
+		c0.987,0.987,2.588,0.987,3.576,0L53.5,29.28L53.5,5H30.22z M43.5,19c-2.209,0-4-1.791-4-4c0-2.209,1.791-4,4-4s4,1.791,4,4
+		C47.5,17.209,45.709,19,43.5,19z&quot;/&gt;
+	&lt;path style=&quot;fill:#CBB292;&quot; d=&quot;M43.5,7c-4.418,0-8,3.582-8,8s3.582,8,8,8s8-3.582,8-8S47.918,7,43.5,7z M43.5,19
+		c-2.209,0-4-1.791-4-4c0-2.209,1.791-4,4-4s4,1.791,4,4C47.5,17.209,45.709,19,43.5,19z&quot;/&gt;
+	&lt;path style=&quot;fill:#D75A4A;&quot; d=&quot;M43.5,16c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414l14-14
+		c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414l-14,14C44.012,15.902,43.756,16,43.5,16z&quot;/&gt;
 &lt;/g&gt;
 &lt;/svg&gt;
 </pre>
